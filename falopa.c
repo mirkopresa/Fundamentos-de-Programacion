@@ -1,5 +1,6 @@
-// Calcular y mostrar la suma de los n primeros números naturales. Siendo n un
-// número ingresado por el usuario. Usar fórmula [ n.(n+1) ] / 2
+// Escribir un programa en C que calcule y muestre la suma de los n primeros números naturales. 
+// Siendo n un número ingresado por el usuario. Usar fórmula [ n.(n+1) ] / 2
+// Realizar una prueba ingresando tu  número de legajo.
 
 #include <stdio.h>
 
