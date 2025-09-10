@@ -39,7 +39,7 @@ int main()
                                     printf("El numero de producto ingresado es incorrecto.\n");
         }
         if (total >= 1000)
-            total=(total - (total/10));
+            total=(total*0.9);
         printf("Has terminado de ingresar compras!\n");
         printf("El importe total a pagar es de $%0.2f", total);
         return 0;
