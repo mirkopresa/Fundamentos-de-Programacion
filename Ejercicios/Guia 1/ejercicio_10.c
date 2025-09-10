@@ -1,6 +1,9 @@
 // Dada una fecha con año, mes y día, informar si es correcta o no. Solicitarle los
 // datos al usuario de forma independiente. Considerar años bisiestos.
 
+
+// NO FUNCIONA LO TENGO QUE ARREGLAR
+
 #include <stdio.h>
 
 int main()
