@@ -21,18 +21,14 @@ int main()
                     nota_total+=nota;
                     cantidad_notas++;
                 }
-            printf("%f\n", nota_total);
             promedio=(nota_total / cantidad_notas);
-            printf("%0.2f\n", promedio);
             if (promedio > mayor_promedio)
                 {
-                    printf("Se registro un mayor promedio\n");
                     padron_mayor=padron;
                     mayor_promedio=promedio;
                 }
             if (promedio < menor_promedio)
                 {
-                    printf("Se registro un menor promedio\n");
                     padron_menor=padron;
                     menor_promedio=promedio;
                 }
