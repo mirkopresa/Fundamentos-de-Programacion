@@ -12,26 +12,26 @@ scanf("%i", &numero);
 if ((numero > 7) || (numero < 1))
     {
     printf("El numero que ingresaste no es valido");
-    return -1;
     }
-if (numero == 1)
-    printf("El dia %i de la semana es lunes.", numero);
-    else
-        if (numero == 2)
-            printf("El dia %i de la semana es martes.", numero);
+else
+    if (numero == 1)
+        printf("El dia %i de la semana es lunes.", numero);
         else
-            if (numero == 3)
-                printf("El dia %i de la semana es miercoles.", numero);
+            if (numero == 2)
+                printf("El dia %i de la semana es martes.", numero);
             else
-                if (numero == 4)
-                    printf("El dia %i de la semana es jueves.", numero);
+                if (numero == 3)
+                    printf("El dia %i de la semana es miercoles.", numero);
                 else
-                    if (numero == 5)
-                        printf("El dia %i de la semana es viernes.", numero);
+                    if (numero == 4)
+                        printf("El dia %i de la semana es jueves.", numero);
                     else
-                        if (numero == 6)
-                            printf("El dia %i de la semana es sabado.", numero);
+                        if (numero == 5)
+                            printf("El dia %i de la semana es viernes.", numero);
                         else
-                            printf("El dia %i de la semana es domingo.", numero);
+                            if (numero == 6)
+                                printf("El dia %i de la semana es sabado.", numero);
+                            else
+                                printf("El dia %i de la semana es domingo.", numero);
 return 0;
 }
