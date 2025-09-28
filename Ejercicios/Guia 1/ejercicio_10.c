@@ -8,7 +8,7 @@
 
 int main()
 {
-    int anio, mes, dia;
+    int anio, mes, dias;
 
     printf("Ingrese un anio: ");
     scanf("%i", &anio);
@@ -17,45 +17,28 @@ int main()
     scanf("%i", &mes);
 
     printf("Ingrese un dia: ");
-    scanf("%i", &dia);
+    scanf("%i", &dias);
 
-    if ((anio > 0) && ((dia > 1) && (dia < 30)) && ((mes == 4) || (mes == 6) || (mes == 9) || (mes == 11)))
-        {
-        printf("El dia %i del mes %i del anio %i es correcto", dia, mes, anio);
-        return -1;
-        }
-    else
-        if ((anio < 0) || ((dia < 1) || (dia > 31)) || ((mes < 1) || (mes > 12)) || ((dia == 31) && (mes == 4) || (mes == 6) || (mes == 9) || (mes == 11)))
+if (((mes <= 12) && (mes >= 1)) && (anio > 0) && ((dias >= 1) && (dias <= 31)))
+    {
+        if (((mes == 1) || (mes == 3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12)) && (dias <= 31))
+            printf("El dia %i del mes %i del anio %i es correcto", dias, mes, anio);
+        else 
             {
-            printf("La fecha ingresada no es correcta");
-            return -1;
+            if (((mes == 4) || (mes == 6) || (mes == 9) || (mes == 11)) && (dias <= 30))
+                printf("El dia %i del mes %i del anio %i es correcto", dias, mes, anio);
             }
-        else
-            if ((anio > 0) && ((dia > 1) && (dia < 31)) && ((mes == 1) || (mes == 3) || (mes == 5) || (mes == 7) || (mes == 8) || (mes == 10) || (mes == 12)))
-            {
-            printf("El dia %i del mes %i del anio %i es correcto", dia, mes, anio);
-            return -1;
-            }
+        if (mes == 2)
+            { 
+            if (((((anio % 4) == 0) && ((anio % 100) != 0)) || ((anio % 400) == 0)) && (dias == 29))
+                printf("El dia %i del mes %i del anio %i es correcto", dias, mes, anio);
             else
-                if (((anio > 0) && (((anio % 4) == 0) || (((anio % 400)== 0)))) && (dia = 29) && (mes = 2) || ((dia > 1) && (dia < 28) && (mes == 2)))
                 {
-                printf("El dia %i del mes %i del año %i es correcto", dia, mes, anio);
-                return -1;
+                if (dias <= 28)
+                    printf("El dia %i del mes %i del anio %i es correcto", dias, mes, anio);}
                 }
-                else
-                {
-                printf("La fecha ingresada no es correcta");
-                return -1;
-                }
-    if (((anio > 0) && (((anio % 4) == 0) || (((anio % 400)== 0)))) && (dia = 29) && (mes = 2))
-        {
-        printf("El dia %i del mes %i del año %i es correcto", dia, mes, anio);
-        return -1;
-        }
-    else
-        {
-        printf("La fecha ingresada no es correcta");
-        return -1;
-        }
-    return 0;
+    }
+else
+    printf("La fecha ingresada no es correcta");
+return 0;
 }
