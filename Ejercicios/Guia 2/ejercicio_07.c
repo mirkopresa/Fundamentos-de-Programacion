@@ -4,7 +4,7 @@
 
 #include <stdio.h>
 
-int cociente( int dividendo, int divisor )
+int cociente_division( int dividendo, int divisor )
 {
     int cociente = 0;
     if (divisor != 0)
