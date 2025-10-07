@@ -5,7 +5,7 @@
 
 float porcentaje(int numero_1, int numero_2)
 {
-    float porcentaje;
-    porcentaje = ((float)numero_1/numero_2) * 100;
-    return porcentaje;
+    float resultado;
+    resultado = ((float)numero_1/numero_2) * 100;
+    return resultado;
 }
