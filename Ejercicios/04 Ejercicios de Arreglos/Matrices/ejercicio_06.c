@@ -31,7 +31,8 @@ void cargar_matriz(mat matriz, int* filas, int* columnas)
 
 bool multiplicar_matrices(mat matriz_1, mat matriz_2, mat matriz_resultante, int filas_1, int filas_2, int* filas_resultante, int columnas_1, int columnas_2, int* columnas_resultante)
 {
-    int i, j, k, multiplicado = false;
+    int i, j, k;
+    bool multiplicado = false;
     if (columnas_1 == filas_2)
         {
             *filas_resultante = filas_1; 
