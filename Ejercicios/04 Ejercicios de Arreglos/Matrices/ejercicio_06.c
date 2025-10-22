@@ -73,11 +73,9 @@ int main()
 {
     mat matriz_1, matriz_2, matriz_resultante;
     int filas_1, filas_2, filas_resultante, columnas_1, columnas_2, columnas_resultante;
-    bool multiplicado;
     cargar_matriz(matriz_1, &filas_1, &columnas_1);
     cargar_matriz(matriz_2, &filas_2, &columnas_2);
-    multiplicado = multiplicar_matrices(matriz_1, matriz_2, matriz_resultante, filas_1, filas_2, &filas_resultante, columnas_1, columnas_2, &columnas_resultante);
-    if (multiplicado)
+    if (multiplicar_matrices(matriz_1, matriz_2, matriz_resultante, filas_1, filas_2, &filas_resultante, columnas_1, columnas_2, &columnas_resultante))
         {
             mostrar_matriz(matriz_resultante, filas_resultante, columnas_resultante);
         }
