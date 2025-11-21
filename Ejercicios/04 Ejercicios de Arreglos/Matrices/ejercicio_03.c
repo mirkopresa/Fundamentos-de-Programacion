@@ -23,7 +23,7 @@ void numero_minimo_fila(mat matriz, int filas, int columnas)
                 menor = matriz[i][j];
             }
         }
-    vector[i] = menor;
+        vector[i] = menor;
     }
     for (k = 0; k < filas; k++)
     {

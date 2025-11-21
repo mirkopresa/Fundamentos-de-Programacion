@@ -493,7 +493,7 @@ int main()
                             {
                                 printf("Ingrese un apellido a buscar: ");
                                 scanf("%s", apellido_buscado);
-                                ordednamiento_apellido(empleados, cantidad_empleados);
+                                ordenamiento_apellido(empleados, cantidad_empleados);
                                 limpiar_stdin();
                                 buscado = buscar_por_apellido(empleados, cantidad_empleados, apellido_buscado);
                                 mostrar_empleado(empleados, buscado);
