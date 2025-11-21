@@ -1,0 +1,9 @@
+Hola    mundo.  Este   es  un    texto   de   ejemplo.
+La    programación    es   divertida   y    desafiante.
+Los    espacios    superfluos    deben    ser    eliminados.
+C   es   un    lenguaje    muy    poderoso.
+Aprender    a    manejar    archivos    es    fundamental.
+Este     texto     tiene     muchos     espacios     extras.
+Las   oraciones   terminan   en   punto.
+El    programa    debe    limpiar    todo    correctamente.
+Fin    del    texto    de    prueba.
